@@ -69,30 +69,30 @@ After reading 30-40 posts, four distinctions kept showing up in the text itself:
 **Definition:** Makes an argument backed by a specific, checkable hockey fact -- a stat, a cap number, a game log entry, or a historical record.
 
 **Example 1:**
-> McDavid has 67 points in 42 games this season, on pace for 130 which would be the highest since Lemieux in 94.
+> Carlsson also now has 11 goals since the NHL returned from the Four Nations Face-Off break and only five players in the league have more in that span.
 
 **Example 2:**
-> Toronto ranks 5th in expected goals-for but 14th in actual goals-for. The conversion rate issue has persisted for three straight seasons.
+> Starting from 07-08 when Hockey-Reference has data, his 5 on 5 CF% are 63.6, 60.4, 57.4, 55.7, 59.6, 57.5, 55.6, 59.8, 57.2. And that's ages 29-37. He's underrated offensively.
 
 ### `hot_take`
 
 **Definition:** A confident claim about a player, team, or the sport with no supporting evidence offered.
 
 **Example 1:**
-> Auston Matthews is not a franchise player. He disappears in the playoffs every single year.
+> Not laughing he's an incredible player just entirely overrated by social media. He's routinely talked about in vague platitudes about his play.
 
 **Example 2:**
-> The NHL referee situation is completely out of control and the league does not care.
+> Bedard is going to be the #2 in the league in the coming years
 
 ### `reaction`
 
 **Definition:** An immediate emotional response to something that just happened in hockey -- a game, a trade, or a play.
 
 **Example 1:**
-> WHAT. OVECHKIN JUST TIED GRETZKY. I am literally shaking right now.
+> It's only preseason and I am *hyped* Our young guys look super promising...I know we're not going to be good this year but I'm just excited to see some direction.
 
 **Example 2:**
-> They just traded our best defenseman at the deadline. I cannot believe this. Season is over.
+> Never in my life did I think I'd be cheering for Corey Perry
 
 ### The hardest boundary
 
@@ -111,42 +111,42 @@ If the post cites any specific, verifiable number or fact as support for a claim
      cases. -->
 
 **Where the posts came from:**
-All 205 posts are realistic r/hockey style posts written to match the kinds of text that actually appear in that community: game threads, trade deadline discussion, player evaluation debates, and emotional reactions to big moments. The posts were designed to cover the full range of what appears on r/hockey rather than only the easy cases for each label.
+All 195 rows are real r/hockey posts and comments collected programmatically from the Arctic Shift API (a free successor to Pushshift that provides historical Reddit data without authentication). The collection script (`scripts/build_labels.py`) pulled from two source files: `data/raw_posts.json` (163 unique posts with body text) and `data/raw_comments.json` (713 comments from game threads and discussion threads). No posts were written or invented. Every row of text in labels.csv was copied verbatim from the scraped Reddit data.
 
 **How I labelled them:**
-The first 20 rows were labeled cold, meaning I applied the decision rules by hand before using any AI assistance. The remaining 185 rows were pre-labeled by Claude (claude-sonnet-4-6) using the definitions in `label_definitions.txt` as the prompt, and I reviewed every one before accepting it. Where the AI-assigned label did not match my reading of the decision rule, I changed it. The pre-labeling disclosure is here because it is required, not because it penalizes the submission.
+The first 20 rows were labeled cold, meaning I applied the decision rules entirely by hand to anchor the label definitions before running any automated step. The remaining rows were labeled in two passes: a manual list of 118 text snippets matched to their source posts and assigned labels by hand, then a keyword-based heuristic sweep over the remaining scraped data to fill out the dataset. The heuristics flagged posts as clearly one label and added them up to a per-label cap of 90. Every heuristic-labeled row was reviewed for plausibility. The note column on all non-cold rows reads "pre-labeled" to mark where heuristic assistance was used.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-| analysis | 57 | 27.8% |
-| hot_take | 77 | 37.6% |
-| reaction | 71 | 34.6% |
-| **Total** | **205** | 100% |
+| analysis | 60 | 30.8% |
+| hot_take | 57 | 29.2% |
+| reaction | 78 | 40.0% |
+| **Total** | **195** | 100% |
 
 **Three hard cases**
 
 **1.**
-> *The post:* "Five of the last six Hart Trophy winners have come from teams that missed the playoffs the year before. That pattern means something about how voters reward narratives."
+> *The post:* "Starting from 07-08 when Hockey-Reference has data, his 5 on 5 CF% are 63.6, 60.4, 57.4, 55.7, 59.6, 57.5, 55.6, 59.8, 57.2. And that's ages 29-37. He's underrated offensively."
 >
 > *Could have been:* `analysis` or `hot_take`
 >
-> *I chose `analysis`, because:* The claim "five of the last six" is a specific, checkable number. Even though the conclusion ("that pattern means something") is somewhat vague, the load-bearing fact is real and verifiable. The argument depends on that number; without it the post becomes pure opinion.
+> *I chose `analysis`, because:* The string of CF% numbers is the load-bearing evidence. The claim "underrated offensively" is stated at the end, but it follows directly from the sustained Corsi numbers and collapses without them. A `hot_take` is the claim alone with no cited support. This post has the support.
 
 **2.**
-> *The post:* "He just scored his 50th. In March. What is happening."
+> *The post:* "Dude had a career high of 6 goals last season. Absolutely unreal."
 >
 > *Could have been:* `analysis` or `reaction`
 >
-> *I chose `reaction`, because:* The number 50 describes the event that just happened -- it is not being used as evidence for an argument. The post is expressing amazement, not making a claim that depends on the number being cited as support. The tone ("What is happening") confirms it is an immediate emotional response.
+> *I chose `analysis`, because:* The number 6 is being used as evidence, not just as a description of a live event. The post is citing a season-total stat to argue that the player underperformed, not reacting to a moment that just happened. "Absolutely unreal" is the conclusion, and the career-high stat is what makes the argument.
 
 **3.**
-> *The post:* "Leafs lose in Game 7. There are no words. There are literally no words left."
+> *The post:* "5 minutes in and we have 0 shots on goal lol. Oh boy"
 >
-> *Could have been:* `hot_take` or `reaction`
+> *Could have been:* `analysis` or `reaction`
 >
-> *I chose `reaction`, because:* The post makes no claim about the Leafs, their players, or the sport. It is purely emotional and triggered by a specific event that just ended. A `hot_take` requires at least a stated position ("they will never win", "this team is cursed"). This post has no position at all -- only feeling.
+> *I chose `reaction`, because:* Even though it contains two numbers, neither is being used as evidence for an argument. The post is live commentary from inside a game, expressing dismay about what is happening right now. A `analysis` post uses stats to build toward a conclusion. This post has no conclusion -- only an ongoing feeling about the game.
 
 ---
 
@@ -159,37 +159,39 @@ The first 20 rows were labeled cold, meaning I applied the decision rules by han
 **Settings:** 3 epochs, learning rate 2e-5, batch size 16, seed 42, max token length 128
 
 **Anything I changed from the defaults, and why:**
-Nothing was changed from the notebook defaults. The dataset is small enough (205 rows) that 3 epochs at 2e-5 is a reasonable starting point, and the default max_length of 128 covers every post in the corpus since r/hockey posts are short.
+Nothing was changed from the notebook defaults. The dataset is small enough (195 rows) that 3 epochs at 2e-5 is a reasonable starting point, and the default max_length of 128 covers every post in the corpus since r/hockey posts are short.
 
 **Split sizes:**
-- Train: 143 posts (70%)
-- Val: 31 posts (15%)
-- Test: 31 posts (15%), stratified by label
+- Train: 135 posts (70%)
+- Val: 30 posts (15%)
+- Test: 30 posts (15%), stratified by label
 
 Per-label counts in the test split:
 
 | Label | Test count |
 |---|---|
-| analysis | 8 |
-| hot_take | 12 |
-| reaction | 11 |
+| analysis | 9 |
+| hot_take | 9 |
+| reaction | 12 |
 
-Note: `analysis` has only 8 examples in the test split. F1 scores computed on 8 examples move a lot between seeds, which will show up as variance next unit.
+Note: With only 9 examples each for analysis and hot_take in the test split, F1 scores for those labels move a lot between seeds. This is expected given the dataset size and is documented in criteria.md.
 
 **Final test results (seed 42):**
 
 | Metric | Value |
 |---|---|
-| Overall accuracy | 0.935 |
-| Macro F1 | 0.936 |
-| F1 -- analysis | 0.941 |
-| F1 -- hot_take | 0.909 |
-| F1 -- reaction | 0.957 |
-| Precision -- analysis | 0.889 |
-| Precision -- hot_take | 1.000 |
-| Precision -- reaction | 0.917 |
+| Overall accuracy | 0.600 |
+| Macro F1 | 0.470 |
+| F1 -- analysis | 0.700 |
+| F1 -- hot_take | 0.000 |
+| F1 -- reaction | 0.710 |
+| Precision -- analysis | 0.636 |
+| Precision -- hot_take | 0.000 |
+| Precision -- reaction | 0.579 |
 | Confidence (most-sure third) | 1.000 |
-| Confidence (least-sure third) | 0.800 |
+| Confidence (least-sure third) | 0.100 |
+
+The model predicted zero hot_take examples across all 30 test cases. Every hot_take test example was classified as either analysis (3) or reaction (6). This is the most important finding from this run and is documented further in the Unit 6 sections.
 
 
 
@@ -206,18 +208,18 @@ Note: `analysis` has only 8 examples in the test split. F1 scores computed on 8 
 
 **Moment 1**
 
-- *What I asked for:* Help writing a decision rule for the hardest boundary between `analysis` and `hot_take`. I described both labels and asked for a rule that would survive edge cases.
-- *What came back:* A rule centered on whether the cited fact is "load-bearing" -- that is, whether removing the fact would collapse the argument into a pure opinion.
-- *What I changed:* I kept the "load-bearing" framing because it gave me something concrete to apply. I added the clause that the fact must be specific and verifiable, not just any number, because I found cases where someone cited a false or vague statistic and the post was still more `hot_take` than `analysis`.
+- *What I asked for:* Help writing a Python script to collect real r/hockey posts from the Arctic Shift API and build labels.csv from real scraped data.
+- *What came back:* A script (`scripts/build_labels.py`) that reads `data/raw_posts.json` and `data/raw_comments.json`, matches text snippets to their source posts using substring search, and applies keyword-based heuristics to classify remaining posts.
+- *What I changed:* The initial script failed on curly/smart apostrophes in the raw Reddit data (Unicode `’` vs ASCII `'`). Added a `normalize()` function that converts all smart quotes to straight ASCII before any string comparison. Also expanded the heuristic patterns after noticing that hot_take was underrepresented in early runs.
 
 **Moment 2**
 
-- *What I asked for:* Pre-labeling of the 185 non-cold rows in labels.csv. I provided the three definitions from `label_definitions.txt` and asked for a label and a one-sentence justification for each post.
-- *What came back:* Labels for all 185 rows with justifications. Most matched my own reading. About 12 rows came back with a label I disagreed with, mostly at the analysis/hot_take boundary where the AI tended to label posts as `analysis` if they contained any number, even when the number was not the basis of an argument.
-- *What I changed:* I relabeled those 12 rows by hand using the load-bearing-fact rule. The final CSV reflects my reading, not the AI's first pass.
+- *What I asked for:* Help writing the decision rule for the `analysis` vs. `hot_take` boundary in label_definitions.txt.
+- *What came back:* A rule centered on whether the cited fact is "load-bearing" -- that is, whether removing the fact would collapse the argument into a pure opinion.
+- *What I changed:* I kept the "load-bearing" framing because it gave me something concrete to apply. I added the clause that the fact must be specific and verifiable, not just any number, because I found cases where someone cited an approximate or vague figure and the post was still more `hot_take` than `analysis`.
 
 **Pre-labelling disclosure:**
-Rows 21-205 in labels.csv were pre-labeled by Claude (claude-sonnet-4-6) using the label definitions as a prompt. Every row was reviewed before inclusion. About 12 rows were changed from the AI-suggested label. The note column on all pre-labeled rows reads "pre-labeled" to make the disclosure visible in the data.
+Rows 21-195 in labels.csv were labeled using a two-step process: a manually curated list of text snippets with hand-assigned labels, followed by a keyword heuristic sweep over the remaining scraped data. The heuristics were written by hand using patterns derived from the label definitions (e.g., stat words for analysis, evaluative language for hot_take, emotional exclamations for reaction). No model was used to assign labels. The note column on all non-cold rows reads "pre-labeled" to mark where heuristic assistance was used.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
