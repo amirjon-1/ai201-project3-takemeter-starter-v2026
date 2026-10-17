@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": false,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.6333333333333333,
+    "f1_macro": 0.4789833822091887,
+    "per_label": {
+      "analysis": {
+        "precision": 0.5789473684210527,
+        "recall": 0.9166666666666666,
+        "f1": 0.7096774193548387,
+        "support": 12
+      },
+      "hot_take": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 7
+      },
+      "reaction": {
+        "precision": 0.7272727272727273,
+        "recall": 0.7272727272727273,
+        "f1": 0.7272727272727273,
+        "support": 11
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Everyone says the new course is faster but the results don't show it. Median finish was 3:58 last year on the old route and 3:56 this year. Two minutes across 4,000 runners is noise, not a faster course.",
+      "gold": "analysis",
+      "predicted": "reaction"
+    },
+    {
+      "text": "My heart rate drift over 90 minutes dropped from 11% to 4% across a year of easy running with no change in pace. That's the aerobic base people talk about, and it took eleven months to show up in the numbers.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "This forum massively overrates mileage and underrates sleep.",
+      "gold": "hot_take",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Well that was miserable. Twenty miles into a headwind and I'm questioning everything.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Three of my last five injuries came within two weeks of a shoe change. I'm not saying the shoes caused it, but I've stopped changing models in a build-up.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Absolutely buried myself on that tempo and I regret nothing.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Track workouts are for people who like feeling fast more than getting fast.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Just watched someone in a full costume run past me at mile 20 and I've never felt worse about myself.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Compared finishing times for people who did the club's structured plan against those who self-coached. Structured group averaged 6 minutes faster, but they also averaged 8 more miles a week. The plan may just be a mileage delivery mechanism.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Just signed up for my first marathon and I'm equal parts excited and terrified.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Got my entry! Been refreshing that page for forty minutes.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Rained the entire four hours. Every single minute. I'm never doing this again and I've already entered next year.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "A sub-3 marathon is more impressive than most people's entire athletic career and runners undersell it constantly.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Checked the splits from the top 20 finishers. Eighteen of them ran the second half slower, average positive split of 3:40. On a course billed as net downhill. Something about the back section is harder than the elevation profile suggests.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Standing at the finish waiting for my sister and I'm more nervous than I was for my own race.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "The pace group at 3:30 finished in 3:34 last year and 3:31 the year before. If you're using them as a safety net, know that the net has a hole in it roughly every other year.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "The entry fee went from 45 to 72 over four years. Field size went from 3,200 to 3,400. Whatever the extra 27 is paying for, it isn't capacity.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Six of the last eight course records here were set in years when race-day temperature was under 10C. The two exceptions were both years with a strong tailwind on the back half. Weather explains more of the record book than the field does.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Just got back from the long run and I cannot feel my hands. Worth it though.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Carbon plates gave me about 2% on paper and roughly nothing in races. Three time trials in each shoe on the same loop, same month: 19:42/19:38/19:51 in the plates, 19:47/19:55/19:44 in the trainers. The overlap is bigger than the gap.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Woke up to snow on race morning. Absolutely gutted.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Twelve weeks of doubles versus twelve weeks of single runs at the same weekly volume. Doubles block: more consistent, no missed days, race 90 seconds faster. Singles block: two missed weeks from fatigue. For me the split makes the volume survivable.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "The entry fees are a scandal and everyone's decided to be fine with it.",
+      "gold": "hot_take",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Finished. Sat down on the kerb. Have not moved in ten minutes.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Strength training is a distraction for distance runners. The time is better spent running.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Legs are wrecked, back is fine, and I have no idea what that means.",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Elevation gain on the official profile is 340m. My watch says 410m and so do the four other people I've compared with. The profile is either smoothed or wrong, and it matters for pacing the last 10k.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Racing more than twice a year is how you stay mediocre forever.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Went back through my logs for every race where I hit my goal. All four had a three-week taper. The two where I tapered for ten days I missed by over two minutes. Small sample, but it's the only variable that lines up.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Trail running has better people and worse racing. Both of those are obvious to anyone who's done both.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    }
+  ]
+}
