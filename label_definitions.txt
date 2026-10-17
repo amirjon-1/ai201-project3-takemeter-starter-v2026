@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+analysis: makes an argument backed by a specific, checkable hockey fact -- a stat, a cap number, a game log entry, or a historical record
+hot_take: a confident claim about a player, team, or the sport with no supporting evidence offered
+reaction: an immediate emotional response to something that just happened in hockey -- a game, a trade, or a play

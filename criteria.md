@@ -53,59 +53,46 @@ whether you hit them:
 
 ## 1.
 
-<!-- Your criterion. It must name a number. -->
-
-
+Overall accuracy >= 0.65 across all three seeds (42, 7, 2024).
 
 **Why this target:**
-
-
+A three-class random guesser reaches 0.33. Requiring 0.65 means the model must do at least twice as well as chance on every seed, not just the lucky one. If it cannot clear that bar consistently the fine-tuning added nothing durable.
 
 ---
 
 ## 2.
 
-<!-- Your criterion. -->
-
-
+Per-label F1 >= 0.50 for every label on every seed.
 
 **Why this target:**
-
-
+A high macro average can hide one completely collapsed label. Requiring each label to reach 0.50 individually ensures the model learned all three distinctions. 0.50 rather than 0.60 acknowledges that reaction is the smallest group in the test split (about 10 examples) and genuine ambiguity exists at the analysis/hot_take boundary. A score computed on 10 examples swings a lot between seeds.
 
 ---
 
 ## 3.
 
-<!-- Your criterion. -->
-
-
+Accuracy on the highest-confidence third of test predictions >= 0.80.
 
 **Why this target:**
-
-
+A well-calibrated classifier should be right most of the time when it is most certain. If it is wrong 30% of the time even on its most confident calls the probability scores cannot be trusted downstream. 0.80 on the top third is a reasonable bar given the label noise at the analysis/hot_take boundary.
 
 ---
 
 ## 4.
 
-<!-- Your criterion. -->
-
-
+Cross-seed accuracy spread <= 0.10 (best seed minus worst seed across seeds 42, 7, 2024).
 
 **Why this target:**
-
-
+A spread wider than 0.10 means the result depends heavily on which examples land in the training set, which points to a dataset too small or labels too inconsistent to produce a reliable signal. Keeping the spread under 0.10 shows that the learned boundary is real and not a lucky split.
 
 ---
 
 ## 5.
 
-<!-- Your criterion. -->
-
-
+Precision on the analysis label >= 0.60 on every seed.
 
 **Why this target:**
+Analysis is the label most likely to be confused with hot_take because both involve assertions about hockey. False positives on analysis are costly: they label an unsupported opinion as a reasoned argument, which is the core error TakeMeter exists to avoid. Requiring precision of at least 0.60 on analysis specifically ensures the model is not just assigning that label liberally to boost recall numbers.
 
 
 
