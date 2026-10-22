@@ -2,182 +2,182 @@
   "model": "facebook/bart-large-mnli",
   "n": 30,
   "seed": 42,
-  "held_out": false,
+  "held_out": true,
   "used_definitions": true,
   "scores": {
     "n": 30,
-    "accuracy": 0.6333333333333333,
-    "f1_macro": 0.4789833822091887,
+    "accuracy": 0.3333333333333333,
+    "f1_macro": 0.26003626003626,
     "per_label": {
       "analysis": {
-        "precision": 0.5789473684210527,
-        "recall": 0.9166666666666666,
-        "f1": 0.7096774193548387,
-        "support": 12
+        "precision": 0.2962962962962963,
+        "recall": 0.8888888888888888,
+        "f1": 0.4444444444444444,
+        "support": 9
       },
       "hot_take": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1": 0.0,
-        "support": 7
+        "precision": 0.5,
+        "recall": 0.1111111111111111,
+        "f1": 0.1818181818181818,
+        "support": 9
       },
       "reaction": {
-        "precision": 0.7272727272727273,
-        "recall": 0.7272727272727273,
-        "f1": 0.7272727272727273,
-        "support": 11
+        "precision": 1.0,
+        "recall": 0.08333333333333333,
+        "f1": 0.15384615384615385,
+        "support": 12
       }
     }
   },
   "predictions": [
     {
-      "text": "Everyone says the new course is faster but the results don't show it. Median finish was 3:58 last year on the old route and 3:56 this year. Two minutes across 4,000 runners is noise, not a faster course.",
-      "gold": "analysis",
-      "predicted": "reaction"
-    },
-    {
-      "text": "My heart rate drift over 90 minutes dropped from 11% to 4% across a year of easy running with no change in pace. That's the aerobic base people talk about, and it took eleven months to show up in the numbers.",
-      "gold": "analysis",
+      "text": "Torts being a fuckin gremlin rn lmao",
+      "gold": "reaction",
       "predicted": "analysis"
     },
     {
-      "text": "This forum massively overrates mileage and underrates sleep.",
-      "gold": "hot_take",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Well that was miserable. Twenty miles into a headwind and I'm questioning everything.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Three of my last five injuries came within two weeks of a shoe change. I'm not saying the shoes caused it, but I've stopped changing models in a build-up.",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Absolutely buried myself on that tempo and I regret nothing.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Track workouts are for people who like feeling fast more than getting fast.",
+      "text": "It should be Josh Brown Legitimately the most frustrating hockey player I've ever watched, and he barely plays in the game He either gives up a bad break the other way or is in the box for a tripping penalty",
       "gold": "hot_take",
       "predicted": "analysis"
     },
     {
-      "text": "Just watched someone in a full costume run past me at mile 20 and I've never felt worse about myself.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Compared finishing times for people who did the club's structured plan against those who self-coached. Structured group averaged 6 minutes faster, but they also averaged 8 more miles a week. The plan may just be a mileage delivery mechanism.",
+      "text": "Hockey Official Certification Does anyone know if the Hockey Canada official certification classes dates matter if they're all online? I'm saying this because my boyfriends been trying to to get into Refereeing so we've been keeping an eye on the class registrations and up until last Monday they were \"Closed\" but now they're all saying \"Registrations Open\" HOWEVER, we noticed that the dates say \"2020-01-01\" or \"2023-06-01\" so I'm super confused because it's says it's open but the class dates are all over the place. Link below for reference: https://register.hockeycanada.ca/clinics",
       "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "Just signed up for my first marathon and I'm equal parts excited and terrified.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Got my entry! Been refreshing that page for forty minutes.",
+      "text": "How did that not go in, shieeet.",
       "gold": "reaction",
       "predicted": "analysis"
     },
     {
-      "text": "Rained the entire four hours. Every single minute. I'm never doing this again and I've already entered next year.",
+      "text": "And there it is. Corey Perry is a saint.",
       "gold": "reaction",
       "predicted": "analysis"
     },
     {
-      "text": "A sub-3 marathon is more impressive than most people's entire athletic career and runners undersell it constantly.",
+      "text": "That Connor Bedard kid might make the squad, seems like a decent pick by Kyle.",
       "gold": "hot_take",
       "predicted": "analysis"
     },
     {
-      "text": "Checked the splits from the top 20 finishers. Eighteen of them ran the second half slower, average positive split of 3:40. On a course billed as net downhill. Something about the back section is harder than the elevation profile suggests.",
+      "text": "Highest is Philipp Kurashev at #114 with 128 points as a Blackhawk. https://www.quanthockey.com/nhl/teams/chicago-blackhawks-players-career-nhl-stats.html",
       "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "Standing at the finish waiting for my sister and I'm more nervous than I was for my own race.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "The pace group at 3:30 finished in 3:34 last year and 3:31 the year before. If you're using them as a safety net, know that the net has a hole in it roughly every other year.",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "The entry fee went from 45 to 72 over four years. Field size went from 3,200 to 3,400. Whatever the extra 27 is paying for, it isn't capacity.",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Six of the last eight course records here were set in years when race-day temperature was under 10C. The two exceptions were both years with a strong tailwind on the back half. Weather explains more of the record book than the field does.",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Just got back from the long run and I cannot feel my hands. Worth it though.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Carbon plates gave me about 2% on paper and roughly nothing in races. Three time trials in each shoe on the same loop, same month: 19:42/19:38/19:51 in the plates, 19:47/19:55/19:44 in the trainers. The overlap is bigger than the gap.",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "Woke up to snow on race morning. Absolutely gutted.",
-      "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Twelve weeks of doubles versus twelve weeks of single runs at the same weekly volume. Doubles block: more consistent, no missed days, race 90 seconds faster. Singles block: two missed weeks from fatigue. For me the split makes the volume survivable.",
-      "gold": "analysis",
-      "predicted": "analysis"
-    },
-    {
-      "text": "The entry fees are a scandal and everyone's decided to be fine with it.",
-      "gold": "hot_take",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Finished. Sat down on the kerb. Have not moved in ten minutes.",
+      "text": "GG Sens, have a great weekend all!",
       "gold": "reaction",
       "predicted": "analysis"
     },
     {
-      "text": "Strength training is a distraction for distance runners. The time is better spent running.",
+      "text": "He'd be 5th in goals on the 15-16 (Matthews tank year) leafs as well lmao",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Yay, we won in regulation, and all it took was having most of our NHL regulars in the lineup!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Perry fights. Camera on Bedard on the bench for reaction.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Best: Hughes set the franchise record for points in a season with 99 in the first season of the \"that's an overpay now but might be worth it in the later years\" contract.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "GG Habs, see you tomorrow!!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "It's wild AF to see Corey Perry in Hawks sweater",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "have fun be safe make good choices!!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "If the Canucks lose 3 preseason games in a row then I'm officially giving up on the team.",
       "gold": "hot_take",
       "predicted": "analysis"
     },
     {
-      "text": "Legs are wrecked, back is fine, and I have no idea what that means.",
+      "text": "I think Ottawas worst contract was Wade Redden, which didnt leave room for Chara",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Brind'amour the most overrated coach",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Who are some players where it's kind of shocking that their careers overlapped? Marc-Andre Fleury and Mark Messier both played in the NHL in 2003/2004, for example.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Kids are like: \"Was Barry Sanders a good running back? I went back and watched some games and he got tackled for a loss a few times\"",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "The top 5 were * Yakupov * Murray * Galchenyuk * G. Reinhart * Reilly Meanwhile, Forsberg goes 11th, Wilson goes 16th and Vasilevskiy goes 19th. But the real kicker are the later rounds, where guys like Slavin were a late 4th rounder, Hellebuyck was a 5th and Ullmark was a 6th. Has there ever been a draft where a large portion of the top 5 flame out, while multiple 4th round picks or later become franchise-changing players?",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "The Pittsburgh Penguins should go into rebuild mode.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Bedard looked great, but I'm super excited with what I've seen or Korchinski. All the young guns seemed to be doing well out there, and I'm especially interested to see when Commesso makes it to the show. Vets were... ah... playing a preseson game",
       "gold": "reaction",
-      "predicted": "reaction"
-    },
-    {
-      "text": "Elevation gain on the official profile is 340m. My watch says 410m and so do the four other people I've compared with. The profile is either smoothed or wrong, and it matters for pacing the last 10k.",
-      "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "Racing more than twice a year is how you stay mediocre forever.",
+      "text": "Jimmy has said often he doesn't give a fuck about his numbers, he just wants to win. I love that kid like a son.",
       "gold": "hot_take",
       "predicted": "analysis"
     },
     {
-      "text": "Went back through my logs for every race where I hit my goal. All four had a three-week taper. The two where I tapered for ten days I missed by over two minutes. Small sample, but it's the only variable that lines up.",
+      "text": "# /r/Hockey NHL Power Rankings Week Oct 23, 2023 - Oct 29, 2023 ## Thank You **Thank you to all of the volunteers doing the power rankings. Each ranker has their own system and have their own reasonings and analyis. It truly is a lot of work.** ### Rankers >!/u/mukuu /u/lang14 /u/copaceticvindication /u/timmablimma /u/dr3amweav3r /u/mephisto1822 /u/joetothejack /u/raymondliang /u/anon_agentd05b /u/mdlt97 /u/sandman730 /u/dagetawayman421 /u/maxpowr9 /u/driftshade11 /u/rawrberry_ /u/blueferret98 /u/steckums /u/rasera /u/nodessb /u/paynetrain181999 /u/silkeystev /u/mcrsft3brdev /u/eatingasspatties /u/recockulous /u/hockeycross /u/longjumpingscene2327 /u/americanadian98 !< ### Organizers >!/u/lang14 /u/thatmikeguy429!< ## Visualization The visualization contains historical data, so you can see how your team has done over time. Hopefully, we can run this for many years in hopes that we can see the rise and fall of teams by /r/hockey opinion. It automatically updates so feel free to bookmark. You can find it [here](https://public.tableau.com/profile/icydata#!/vizhome/PowerRankings/rHockeyPowerRankings) ## Process How does this work? Throughout the course of the week rankers are able to access an app that will allow them to rank teams. At the end of the period we calculate the average ranking for every team and collate all of the analysis provided by rankers. The app then generates a post that is first proofread and then posted to /r/hockey! ## Rankings Ranking (avg) | Team | Delta | Overall Record | Record This Week | Comments :---:|:---:|:----:|:----:|:----:|:----:| 1 (1.1) | [Vegas Golden Knights](/r/goldenknights) | - | 8-0-1 | 2-0-1 | **anon_agentd05b says** Knights take their first loss of the season this week (still got a point though). Special teams just abandoned the team on Friday, Knights had four powerplays and capitalized on none, meanwhile they couldn't kill the only Chicago powerplay, and it cost them the game. The first loss had to happen eventually, just wish it didn't nearly happen again the very next day. A lazy start by the Knights meant a shootout for a win over LA. Overall the week went fairly well, two wins that can only be explained as \"Vegas wins because of Vegas reasons\" and of course a loss on the back of a limp pp. Vegas needs to put in more effort, each game this week was too close. Some bad bounces and this week could have been three losses. The Knights are playing as if the playoffs are promised and while I like the confidence, it cost them a point. The good? They've been able to fight back relatively easily when they let themselves get behind. Dear salty redditor from last week, Is that good enough? H I S T O R I C | 2 (2.5) | [Boston Bruins](/r/bostonbruins) | 1 | 7-0-1 | 2-0-1 | **maxpowr9 says** The Ken boys just keep on trucking. | 3 (3.73) | [Colorado Avalanche](/r/coloradoavalanche) | -1 | 6-2-0 | 1-2-0 | **hockeycross says** Tough week for the Avs. Set the record for most road wins in a row and then lost 2 in a row on the road. No team is going 82-0 so good to face some adversity. Having trouble with our top lines clicking. They probably should just have Ranatnen and Mackinnon play together. Penalty Kill has still been really good, Power Play has faded hard. Everyone should be healthy for this week though with Makar finishing the Buffalo game. | 4 (5.4) | [New York Rangers](/r/rangers) | 3 | 6-2-0 | 3-0-0 | **nodessb says** Very solid week and continued good play thanks to the players actually being given direction. This team definitely is playing with more purpose than they were towards the end of last season and especially in the playoffs. The kids are getting time and they are steadily gaining more confidence which is extremely promising for the future of this team. I can't wait to see if Lav can keep the boys playing like this all season because if they can, we can be a true contender. LGR! | 5 (5.63) | [Toronto Maple Leafs](/r/leafs) | 0 | 5-2-1 | 2-0-1 | **lang14 says** Outplayed Washington, Dallas and Nashville players. Outplayed by Saros. Samsonov had a good game in Nashville, which is a bright spot. Woll looks great. Bertuzzi is doing great. Domi is starting to look better. D core still a question mark. Zero clue why we signed Klingberg when Reilly is objectively better in all facets of the game. As soon as Timmins is back, shoot Klingberg into the moon. | 6 (5.8) | [Dallas Stars](/r/dallasstars) | -2 | 4-1-1 | 1-1-0 | **rawrberry_ says** The Stars only played two games this week. One of the games was good and the other one was not fun. 2015 last time Stars won a regular season game in Pitts prior to this week. For the first time the PK failed and Toronto was the team to pop the donut. Though it was a fantastic keep in by Knies so I can't be too upset. It was also the first time the Stars have failed to get a point and first time the Stars have lost in regulation. At least there were no short handed goals given up. Also learned a new word so that was a plus, diaphanous. Now some of y'all have too. All thanks to Razor on the new word. | 7 (7.17) | [New Jersey Devils](/r/devils) | -1 | 5-2-1 | 3-1-0 | **silkeystev says** Last week of vibe ranking, my formula will have enough data to work next week! Stars of the week are Bratt, Jack, and Haula. Has Haula finally broken the curse? The broken stick on the empty net attempt says no, he hasn't totally broken his curse. Bratt has been getting on the score sheet and is now back to PPG as the team rolls offensively. Now if we could fix the problems with letting goals in... we'd be golden. | 8 (9.53) | [Carolina Hurricanes](/r/canes) | 0 | 5-4-0 | 2-1-0 | **timmablimma says** Svech is back and the refs are already calling BS penalties on them. First in the division is back on the menu! Necas is a beauty and Teravanien is saying fuck the haters. We now back. | 9 (10.47) | [Tampa Bay Lightning](/r/tampabaylightning) | 1 | 4-2-2 | 2-0-0 | **mcrsft3brdev says** It's the JoJo show! Two fantastic games this week, with some scoring and full game efforts. VASY HAS BEEN SEEN SKATING. | 10 (11.37) | [Vancouver Canucks](/r/canucks) | 2 | 5-2-1 | 2-0-1 | **raymondliang says** I said the Canucks needed Petey, Hughes, and goaltending to be elite if they wanted to be real playoff contenders. So far, they've delivered, and more. | 11 (12) | [Los Angeles Kings](/r/losangeleskings) | 0 | 4-2-2 | 2-0-1 | **raymondliang says** Scary good offense and this is with Fiala (1G) and Kempe (2 EN) misfiring. Might have one of the deepest forward lines in hockey. Goaltending (mainly Copley) and team defense question marks are still unanswered. | 12 (13) | [Detroit Red Wings](/r/detroitredwings) | -3 | 5-3-1 | 0-2-1 | **americanadian98 says** Wings had a tough week. Rumor is that a bug is going around and it sure seems like it given their performances. 3 straight losses including a game where they were thoroughly outplayed by Boston. Not sure where this team's ability actually is, but it is likely somewhere between the hot streak they had and the cold streak they're on now. | 13 (13.63) | [New York Islanders](/r/newyorkislanders) | 0 | 4-2-1 | 2-1-0 | **mephisto1822 says** The week went exactly as expected. Tough loss to the AVs then cleaned up against the Sens and Blue Jackets. This team is still a work in progress and hasn't reached its final form yet. The New York \"Saints\" took the week off. It feels like they took at least half of their 72 PIM the last three or four games. I just wanted to include that stat for those (me included) over reacting about the penalties. Still bottom 10 in the league for PIM. PP and PK are both bottom half of the league though which doesn't bode well for trying to secure a playoff spot long term. I expect the PK to get its shit together. The power play though...pass pass pass one timer, pass pass one timer...is too predictable. Maybe the goal is to hypnotize the opponent? I still like to remain optimistic about this team and their ability to make the playoffs. 4-2-1 to start isn't bad at all. But if the special teams don't click soon it could make for a frustrating season. But this is the Islanders we're talking about | 14 (14) | [Florida Panthers](/r/floridapanthers) | 0 | 4-3-0 | 2-0-0 | **copaceticvindication says** Sure we beat two of the worst teams in the league, but a win is a win baby. The team continues to look pretty good in 5 on 5 while our special teams remain some of the worst in hockey, woo. Also I'm putting them up for this nomination early, but the Sam Reinhart-Barkov-Evan Rodriguez line might just be one of the best lines in all of hockey. The Cats are going to look to notch our third win in a row against some team we played last year who choked a 3-1 lead. | 15 (16.9) | [Montreal Canadiens](/r/habs) | 7 | 5-2-1 | 3-1-0 | **mdlt97 says** Habs stay rolling, it's not pretty but at the end of the game they are usually winning the impact Dach has is very apparent with how poorly the 2nd line has been, but the top line has stepped up massively overall a very good and surprising start, Habs are going on the road, they are in Vegas, Arizona, and St. Louis this week | 16 (17.9) | [Winnipeg Jets](/r/winnipegjets) | 2 | 4-3-1 | 2-0-1 | **rasera says** Last week I said to expect us to be above .500 at October's end. ([See, I did say that](https://www.reddit.com/r/hockey/comments/17eo2o2/rhockey_nhl_power_rankings_week_2_fading_g8ness/)). With the way the Jets have played through October, they really should be 6-2-0 at worst. 3 out of the 4 lines are looking great every game, though the 1 bad line seems to change each night. Just gotta clean up that PK. Expectations are rising, please don't let us down. | 17 (18.17) | [Ottawa Senators](/r/ottawasenators) | -2 | 4-4-0 | 1-2-0 | **driftshade11 says** Just an awful week dear god. The Pinto suspension (shows where the league's priorities are but makes sense in isolation), Brannstrom and Chabot injuries, still no Zub, and now the pending punishment for the Dadonov fiasco from 2022. The team's also playing scuffling uninspired hockey. Did we take a time machine back to 5 years ago or something? | 18 (18.5) | [Philadelphia Flyers](/r/flyers) | -1 | 4-3-1 | 1-2-0 | No Flyers blurb this week, sorry. | 19 (18.6) | [Minnesota Wild](/r/wildhockey) | -3 | 3-4-2 | 1-2-1 | **paynetrain181999 says** Still waiting for Spurgeon, Boldy and Gaudreau to return desperately. This team is all over the place, look great some nights, terrible on others, and keeping it close to secure one point in the rest. This is how I imagine most of this and next season will be, but after that? We regain the ability to use the entire salary cap, that's when the true rise of this team can really begin. Until then it's likely more of the same, will Dean Evason last that long as coach? Personally I don't think so. Our opponents for this week include just the Devils again and the Rangers. Maybe a light week will be just what the doctor ordered. | 20 (20.1) | [Buffalo Sabres](/r/sabres) | 0 | 4-5-0 | 2-2-0 | **dr3amweav3r says** Again, the Sabres had a Jekyll and Hyde week. The only consistency being they outplayed their opponents for the majority of all four games. Sadly, playing hard doesn't mean squat when you can't screen Jake Allen or make him move for an entire 60 minutes, nor does the turtling and playing shit hockey in the 3rd period when trying to defend a lead against good offenses (OTT, NJ). Beating a great team having a bad time in the Avs, along with the refs conducting a masterclass display of game management, is always a confidence boost. Especially for UPL; gets his first career shutout, and for now, this is his net. The powerplay is a mess, they suck at the dot (but are getting better), and the PK has been a godsend. A home-n-home against Philly will be a tough set, as they don't perform well against systems, followed up by what should be a fun one across the QEW. | 21 (20.83) | [Nashville Predators](/r/predators) | 0 | 4-4-0 | 1-1-0 | **We are looking for a Preds ranker, if you are a Preds fan and are interested please message /u/ThatMikeGuy429** | 22 (22.1) | [Pittsburgh Penguins](/r/penguins) | -3 | 3-5-0 | 1-2-0 | **longjumpingscene2327 says** The calls for Sullivan to be fired are getting louder. Something strange this way comes. An absolute clinic was put on against Colororado but can't take care of business with any other team. Stars look great, power play doesnt... I mean, its the same litany from the past 2 years. Hard to imaginie this group as a playoof team right now. | 23 (22.8) | [St. Louis Blues](/r/stlouisblues) | 3 | 3-3-1 | 1-2-0 | **We are looking for a Blues ranker, if you are a Blues fan and are interested please message /u/ThatMikeGuy429** **dr3amweav3r says** So the Blues might still be pretty mediocre. Beating Calgary is no feat worthy of praise, but they didn't have an easy go on their Western Canada swing. They'll be facing a pissed Avs team, followed by a road trip east. Buckle up. | 24 (23.6) | [Columbus Blue Jackets](/r/bluejackets) | -1 | 3-3-2 | 0-1-2 | **steckums says** This Jackets team looks waaay better than last season's. Defense looks better. Goaltending has been acceptable. Power play is probably the best it as been in a decade. The major issue we have right now is scoring goals. We're 31st in goals scored above expected with -11.1, only ahead of Washington. | 25 (24.27) | [Arizona Coyotes](/r/coyotes) | -1 | 3-4-0 | 0-2-0 | **recockulous says** A pair of losses to the Kings isn't surprising given how often the Yotes and Kings played in pre-season. The Yotes were depleted by illness during the second game, but the defensive breakdowns were ugly. Also, don't sleep on the Kings - they're much better than what they've iced the last two years. | 26 (24.33) | [Anaheim Ducks](/r/anaheimducks) | 4 | 4-4-0 | 3-0-0 | **We are looking for a Ducks ranker, if you are a Ducks fan and are interested please message /u/ThatMikeGuy429** **mukuu says** I was bored and decided to watch some Ducks this week. The product on the ice is leaps and bounds better than it was last year. I dont think this last week was an outlier and think the Ducks could find themselves looked like a half-decent team this year. | 27 (24.53) | [Washington Capitals](/r/caps) | 1 | 4-3-1 | 3-1-0 | **dagetawayman421 says** The Capitals ranker completed his rankings while in Edmonton before the Heritage Classic, this does not include Sunday's game vs the Sharks. I'll be drunk in the 10th row of Section U2 in Commonwealth Stadium when that games ends. The Capitals looked really bad the first three games, and I think it was because they had difficulty getting Carbery's system implemented, same with their new power play, and all the injuries to start the year. The 5v5 numbers looked a lot better the past four games (even though they've been getting outscored 5v5). The difference has been the PP and PK showing up. The Power Play has scored in 3 straight games and prevented goals being scored in the last two games while killing penalties (and that includes that crazy game against the Devils). Ovechkin woke up after the first week of the season and started scoring again, now he's showing off his underrated passing skills and trying to get to 700 assists this season and become the sixth member of the 700/700 club. | 28 (25.7) | [Edmonton Oilers](/r/edmontonoilers) | -1 | 2-5-1 | 1-2-0 | **eatingasspatties says** The season's turning around boys! It's all uphill from here. Which is an idiom that doesn't make sense, if it's all uphill from here that 's a lot more work that going downhill, it seems like a bad thing. It all being downhill from here seems like a much better thing, I love going downhill. Anyways, the Flames suck worse than the Oilers, and that's all that really matters. | 29 (26.8) | [Calgary Flames](/r/calgaryflames) | -4 | 2-6-1 | 0-3-0 | No Flames blurb this week, sorry. | 30 (27.57) | [Seattle Kraken](/r/seattlekraken) | -1 | 2-5-2 | 1-1-1 | **mukuu says** Still not ready to hit the panic button. The Kraken have played a lot of very good teams the last two weeks, and while going 2-3-1 against them isnt great, I still believe they are significantly better than their record shows based on their performance on the ice. Their top line guys need to start being top line guys though. Beniers and Eberle are getting clobbered on the ice and totally out matched. Hopefully the line mix-ups make something happen. Beniers especially has not looked great anywhere on the ice. | 31 (28.97) | [Chicago Blackhawks](/r/hawks) | 0 | 3-5-0 | 1-1-0 | **sandman730 says** The Hawks finished a tough 1-3-0 stretch against the NHL's top teams (COL, VGK x2, BOS). They broke VGK's undefeated streak with an OT win. The Hakws are getting good goaltending from Mrazek and Soderblom; their .913 team SV% is 10th in the NHL. | 32 (31.93) | [San Jose Sharks](/r/sanjosesharks) | 0 | 0-8-1 | 0-4-0 | **blueferret98 says** Still winless, still averaging one goal per game, still looking awful. There are players with more goals than us. Feels bad man. |",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Yeah that's true. I wrote a little earlier today that Nico & Jack locked up around $15 million is why Fitz is so impatient. You have a Selke & Hart candidate locked up for much less their value next to other players, you got to take advantage of it",
       "gold": "analysis",
       "predicted": "analysis"
     },
     {
-      "text": "Trail running has better people and worse racing. Both of those are obvious to anyone who's done both.",
+      "text": "Current Coach: Dean Evason. Good Regular season record but no success in the playoffs thus far. 14 combined playoff appearances as a coach in Juniors, Minors and NHL. 13 out of 14 seasons, he didn't succeed in coaching his team out of the 1st Rd. Current GM: Kevin Cheveldayoff. Builds competitive rosters for the regular season, however the Jets have an 18-31 win-loss record since 2011-12 season.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Juulsen and podkolzin sticking out for the wrong reasons",
       "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Traded for him with ZERO leverage in the negotiations btw. Holmgren!!!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I mean yeah, he wasn't in the best situation here with us going into a rebuild. He's putting up 4th line/ low end 3rd line numbers, which is great for him because I really like him, and want him to stick around, but that's not what we envisioned when he was drafted. Him not working out here wasn't due to a lack of effort, and he never had a bad attitude, shit just happens.",
+      "gold": "analysis",
       "predicted": "analysis"
     }
   ]
